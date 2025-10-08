@@ -1,0 +1,79 @@
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/VTU1/OneDrive/Desktop/ANIKET/exp1/.git/
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ touch dot.txt
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git add .
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git commit -m "file created"
+[master (root-commit) 3d5c2f2] file created
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dot.txt
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git log
+commit 3d5c2f236a4f97faf8da865f065894c665fb17c3 (HEAD -> master)
+Author: aniket <aniket@gmail.com>
+Date:   Wed Oct 8 15:17:31 2025 +0530
+
+    file created
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ vi pk.txt
+
+[1]+  Stopped                 vi pk.txt
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git add .
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .pk.txt.swp
+
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git log
+commit 3d5c2f236a4f97faf8da865f065894c665fb17c3 (HEAD -> master)
+Author: aniket <aniket@gmail.com>
+Date:   Wed Oct 8 15:17:31 2025 +0530
+
+    file created
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git branch new
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git branch
+* master
+  new
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (master)
+$ git checkout new
+A       .pk.txt.swp
+Switched to branch 'new'
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (new)
+$ vi pk.txt
+
+[2]+  Stopped                 vi pk.txt
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (new)
+$ git add .
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (new)
+$ git commit -m "edited a file"
+[new 797b517] edited a file
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .pk.txt.swo
+ create mode 100644 .pk.txt.swp
+
+VTU1@vtu MINGW64 ~/OneDrive/Desktop/ANIKET/exp1 (new)
+$
